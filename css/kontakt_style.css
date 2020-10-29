@@ -1,0 +1,219 @@
+/* reset CSS */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+
+html, body{height: 100%}
+body{
+    font-family:verdana, arial, sans-serif;
+    font-size: 62.5%;
+
+}
+#strona {
+    width: 100%;
+    border: solid 1px slategray;
+    min-height: 100%;
+    position: relative;
+}
+header{ height: 25%; background: darkolivegreen; float: left}
+
+footer{
+    height: 10%;
+    background: #803514;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+nav { height: 25%;
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+    padding:0.2% 0.5% 0.2% 0.5%;
+    background:darkolivegreen;
+    font-size: 15px;
+    }
+
+.enter{clear: both}
+
+article {
+    height: 40%;
+    width:60%;
+    float:left;
+
+  /*  padding:0.2% 1.5% 0.2% 1.5%;*/
+    flex-wrap: wrap;
+}
+
+
+aside {height:60%;
+    width:40%;
+    float:left;
+    padding-top: 2%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-image: url("../img/kontakt.jpg");}
+
+
+nav ul { margin:0px; padding:0px; list-style-type: none; }
+
+nav ul a, nav ul li a:visited {
+
+    display:block;
+    border:2px solid olivedrab;
+    text-align:center;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+    background: olivedrab;
+    padding:5px;
+    margin:3px;
+
+}
+.top li :hover{background: #7d8b06}
+.top li {float: left;}
+.top .logo a {margin: 0px; padding: 0px}
+
+
+.formularz {
+    float: left;
+    width: 30%;
+    height: 40%;
+    padding: 0%;
+    margin: 0%;
+}
+form input{
+    padding: 2%;
+    margin: 2%;
+
+}
+.info{float: left;
+width: 10%;
+
+padding: 2%;
+    margin:2%;
+    font-weight: bold;
+}
+.info label{
+    display: block;
+    padding: 1%;
+    margin-right: 2px;
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+
+ textarea{
+  font-size: 10px;
+     rows: 4; cols: 50;
+     padding-left: 5%;
+     padding-right: 5%;
+     width : 95%;
+     max-lines: 4;
+
+}
+h1  {
+    display: block;
+    padding: 1%;
+    text-align: center;
+    font-size: large;
+
+}
+
+
+p{
+    font-size: 8px;
+    float: left;
+    margin-right: 0.2%;
+    padding: 0%;
+    opacity: 0.8;
+}
+
+p.stopka{font-size: 15px;
+    color: white;
+    transform: none;
+    font-weight: bold;
+    padding-top: 0%;
+    opacity: 1;
+    margin-left: 30%;
+    margin-top: 1.5%;
+
+}
+
+
+h1.etykieta{
+    background: darkolivegreen;
+    margin-top: 10%;
+    font-size: 30px;
+    width: 85%;
+    height: 10%;
+    color: white;
+
+    margin-right: 5%;
+    margin-left: 2%;
+    margin-bottom: 20%;
+}
+
+
+
+@media (min-width: 1100px) {
+
+    #strona {width:100%;}
+
+    aside {width:40%;}
+
+    article {width:60%;}
+
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+
+    #strona {width:1100px;}
+
+    aside {width:40%;}
+
+    article {width:60%;}
+
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+
+    #strona {width:1200px;}
+
+    aside {width:40%; height: 100%}
+
+    article {width:60%;}
+
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+
+    #strona {width:800px;}
+
+    aside,
+
+    article {width:100%;}
+
+}
+
+@media (max-width: 500px) {
+
+    #strona {width:100%;}
+
+    aside,
+
+    article  {width:100%;}
+
+}
